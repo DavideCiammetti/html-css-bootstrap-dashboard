@@ -13,12 +13,7 @@ nav{
     background-color: var(--white);
     height: 3.75rem;
 }
-nav, .dc-end-pos{
-    justify-content: flex-end;
-}
-nav, .dc-pos-start{
-    justify-content: flex-start;
-}
+
 .dc-w-100 {
     width: 100%;
 }
@@ -32,8 +27,15 @@ nav, .dc-pos-start{
     background-color: var(--blue-700);
     width: 4.1875rem;
     height: calc(100vh - 60px);
-}.dc-sidebar p, i{
+}
+.dc-sidebar p, i{
     color: var(--white);
+}
+.dc-end-pos span i{
+    color: #5b5858;
+}
+.dc-end-pos .dc-yellow{
+    color: #ff8f00;
 }
 .dc-bg-blue-300{
     background-color: #1b72e8;
