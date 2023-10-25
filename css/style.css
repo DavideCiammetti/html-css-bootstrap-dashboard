@@ -1,14 +1,29 @@
+@import url('./component/search_bar.css');
 body{
     font-family: 'Roboto', sans-serif;
 }
 :root{
     --white: white;
     --blue-700: #051e34;
+    --black: black;
 }
 /* header */
-.dc-header{
+.dc-header,
+nav{
     background-color: var(--white);
     height: 3.75rem;
+}
+nav, .dc-end-pos{
+    justify-content: flex-end;
+}
+nav, .dc-pos-start{
+    justify-content: flex-start;
+}
+.dc-w-100 {
+    width: 100%;
+}
+.dc-wid-img{
+    width: 4.0625rem;
 }
 /* header */
 /* main */
