@@ -3,4 +3,21 @@ body{
 }
 .dc-header{
     background-color: aqua;
+    height: 3.75rem;
+}
+.dc-bg-fixed-col{
+    background-color: blueviolet;
+    width: 67px;
+    height: calc(100vh - 60px);
+}
+main{
+    height: calc(100vh - 60px);
+}
+
+/* media query parte fissa a sinistra */
+@media screen and (min-width: 992px) {
+    .dc-bg-fixed-col{
+        width: 150px;
+    }
+    
 }
