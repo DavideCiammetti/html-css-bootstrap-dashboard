@@ -74,15 +74,8 @@ main{
     /* parte blu sotto header */
 
 /* parte sinistra main */
-.dc-border-table{
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-}
 .dc-table-img img{      /*img tabella*/
     width: 30px;
-}
-.dc-h3-bord{
-    border-bottom: 1px solid #e0e0e0;
 }
 .dc-table-ico i{        /*icone tabella*/
     color: #6c757d;
@@ -103,7 +96,10 @@ tbody td{
 tbody td{
     text-align: center;
 }
-
+.dc-backc-h3,
+.dc-long-h3{           /*back coloro h3 FAQ lista */
+    background-color: #f7f7f7;
+}
 
 /* parte sinistra main */
 
