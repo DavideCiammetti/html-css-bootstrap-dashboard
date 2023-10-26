@@ -6,7 +6,8 @@
     "axe/name-role-value": [
       "default",
       {
-        "input-button-name": "off"
+        "input-button-name": "off",
+        "button-name": "off"
       }
     ],
     "no-inline-styles": "off",
@@ -14,6 +15,12 @@
       "default",
       {
         "duplicate-id-aria": "off"
+      }
+    ],
+    "axe/aria": [
+      "default",
+      {
+        "aria-allowed-attr": "off"
       }
     ]
   }

@@ -1,0 +1,39 @@
+  /* offcanvas */
+  .dc-wid-700{        /*largezza offcanvas*/
+    width: 740px;
+    top: 0;
+    right: 0;
+    border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+}
+.dc-select{     /*select stato nel offcanvas*/
+    height: 38px;
+    margin-top: 32px;
+    width: 260px;
+}
+.dc-input-w{
+    height: 38px;
+    margin-top: 32px;
+}
+.dc-w-nc{
+    width: 350px;
+    margin-right: 10px;
+}
+.dc-city-w{     /*bottone città*/
+    width: 320px;
+}
+.dc-cap-w{
+    width: 90px;
+}
+.dc-reset-b{        /*bottone reset*/
+    background-color: #ffc107;
+}
+.dc-state-p{        /*lista stati*/
+    left: 48%;
+}
+.dc-file-search{
+    bottom: 60%;
+}
+.dc-mail-p{
+    right: 88%;
+}
+/* offcanvas */

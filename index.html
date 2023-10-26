@@ -52,7 +52,21 @@
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </span>
                         <span class="ps-4">
-                            <i class="fa-solid dc-yellow fa-bell"></i>
+
+                            <!-- dropdown -->
+                            <div class="dropdown">
+                                <button class="border-0 bg-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid dc-yellow fa-bell"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                  <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                              </div>
+                            <!-- dropdown -->
+
+                           
                         </span>
                     </div>
             <!--fine icona small screen-->
@@ -129,11 +143,95 @@
                 </div>
                 <!-- parte di centro -->
                 <!-- parte di destra-->
-                <div class="col-12 col-md-2 d-flex justify-content-md-center ms-3 mt-md-4 mb-4 dc-white dc-margin">
+                <div class="col-12 col-md-2 d-flex justify-content-md-center ms-3  mb-4 dc-white dc-margin">
                    <span class="d-flex">
-                    <p class="lh-3 dc-vert-alig me-2">Nuovo studente</p>
-                    <i class="dc-font-s-ico fa-regular fa-square-plus"></i>
+                    <p class="lh-3 mb-2 dc-vert-alig ">Nuovo studente</p>
+                  
+                    <button class="btn dc-bac-col pb-4 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <i class="dc-font-s-ico fa-regular fa-square-plus"></i>
+                      </button>
                    </span>
+                   <!-- offcanvas -->
+                  <div class="offcanvas dc-wid-700" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+                    <div class="offcanvas-header">
+                        <h4>Inserisci uno studente</h4>
+                    </div>
+                    <div class="offcanvas-body">
+
+                        <form>
+                            <!-- nome e cognome -->
+                            <div class="mb-3 d-flex">
+                               <div>
+                                <label for="exampleInputName1" class="form-label">Nome</label>
+                                <input type="name" class="form-control dc-w-nc" id="exampleInputName1" aria-describedby="emailHelp">
+                               </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputSurname1" class="form-label">Cognome</label>
+                                    <input type="name" class="form-control dc-w-nc" id="exampleInputSurname1">
+                                </div>
+                            </div>
+                            <!-- nome e cognome -->
+                            <!-- email e password -->
+                            <div class="mb-3 d-flex">
+                                <div class="input-group  mb-3">
+                                    <span class="input-group-text dc-input-w" id="basic-addon1">
+                                        <label for="exampleInputMail1" class="form-label position-absolute bottom-50 dc-mail-p">Email</label>
+                                        @
+                                    </span>
+                                    <input type="mail" class="form-control dc-w-nc dc-input-w" placeholder="" aria-label="email">
+                                  </div>
+                                <div>
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control dc-w-nc" id="exampleInputPassword1">
+                                </div>
+                            </div>
+                             <!-- email e password -->
+                              <!-- indirizzo -->
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            </div>
+                             <!-- indirizzo -->
+                               <!-- città stato e cap -->
+                            <div class="mb-3 d-flex position-relative pt-3">
+                                <div >
+                                 <label for="exampleInputCity1" class="form-label">Città</label>
+                                 <input type="city" class="form-control dc-city-w" id="exampleInputCity1" aria-describedby="emailHelp">
+                                </div>
+                                <label for="stato" class="position-absolute dc-state-p">stato</label>
+                                <select class="form-select form-select-sm dc-select me-3 ms-3" aria-label="Small select example">
+                                    <option selected>Scegli...</option>
+                                    <option value="1">Italia</option>
+                                    <option value="2">Cina</option>
+                                    <option value="3">Canada</option>
+                                  </select>
+                                 <div class="mb-3">
+                                     <label for="exampleInputCap1" class="form-label">Cap</label>
+                                     <input type="number" class="form-control dc-cap-w" id="exampleInputCap1">
+                                 </div>
+                             </div>
+                            <!-- città stato e cap -->
+                            <!-- scegli file -->
+                            <div class="input-group pt-3 mb-3">
+                                <label for="inputGroupFile02" class="form-label position-absolute dc-file-search">Foto</label>
+                                <input type="file" class="form-control rounded-3" id="inputGroupFile02">
+                              </div>
+                            <!-- scegli file -->
+                            <div class="mb-3 form-check pt-4">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Salva</button>
+                            <input class="border-0 p-2 rounded-3 dc-reset-b" type="reset" value="Svuota">
+                          </form>
+                    <div class="dropdown mt-3">
+
+                    </div>
+
+                    </div>
+                  </div>
+                   <!-- offcanvas -->
                 </div>
                   <!-- parte di destra-->
             </div>
@@ -379,19 +477,19 @@
                         </div>
                         <!-- parte interna -->
                         <div class="border rounded-3 m-3 ">
-                                <div class="form-check border-bottom p-3">
+                                <div class=" border-bottom p-3">
                                     <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
                                     Kickoff nuove classi
                                     </label>
                                 </div>
-                                <div class="form-check border-bottom p-3">
+                                <div class=" border-bottom p-3">
                                     <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckChecked" checked>
                                     <label class="form-check-label" for="flexCheckChecked">
                                     Lezione su Bootstrap 5 in classe #75
                                     </label>
                                 </div>
-                                <div class="form-checkbor p-3">
+                                <div class=" p-3">
                                     <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckChecked" checked>
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Controllare username github studenti
@@ -402,20 +500,22 @@
                     </div>
                     <!--  check box -->
                     <!--  grafico-->
-                    <div class="row col-12 mt-3">
-                        <ul class="list-group">
-                            <li class="list-group-item dc-img-list">
-                                <img src="img/stats.jpeg" alt="graph">
-                                <h4>Utenti attivi</h4>
-                                <p class="dc-color-black">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
-                            </li>
-                            <li class="list-group-item">Gennaio: 1200</li>
-                            <li class="list-group-item">Febbraio: 800</li>
-                            <li class="list-group-item">Marzo: 1500</li>
-                            <li class="list-group-item">
-                                <a href="#">Visualizza report approfondito</a>
-                            </li>
-                          </ul>
+                    <div class="row col-12 mb-3 mt-3">
+                        <div class="border rounded-3 p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item dc-img-list">
+                                    <img src="img/stats.jpeg" alt="graph">
+                                    <h4>Utenti attivi</h4>
+                                    <p class="dc-color-black">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                </li>
+                                <li class="list-group-item">Gennaio: 1200</li>
+                                <li class="list-group-item">Febbraio: 800</li>
+                                <li class="list-group-item">Marzo: 1500</li>
+                                <li class="list-group-item">
+                                    <a href="#">Visualizza report approfondito</a>
+                                </li>
+                              </ul>
+                        </div>
                     </div>
                 </div>
                 <!-- grafico -->

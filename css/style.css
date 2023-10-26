@@ -1,4 +1,5 @@
 @import url('./component/search_bar.css');
+@import url('./component/offcanvas.css');
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -14,7 +15,7 @@ nav{
     height: 3.75rem;
 }
 .dc-wid-img{            /*logo*/
-    width: 4.0625rem;
+    width: 3.8125rem;
 }
     /* icone header a destra */
     .dc-end-pos span i{
@@ -43,7 +44,8 @@ main{
     }
     /* barra di sinistra  */
     /* parte blu sotto header */
-    .dc-bg-blue-300{
+    .dc-bg-blue-300,
+    .dc-bac-col {
         background-color: #1b72e8;
     }
     .dc-padd-ico{       
@@ -58,15 +60,15 @@ main{
     }
     .dc-bg-pad p, 
     .dc-border-rad i{       /*stile paragrafi parte sopra blu*/
-        padding: .1875rem .25rem;
+        padding: .1875rem .4375rem;
         background-color: #165bba;
         border-radius: 20px;
     }
+    .dc-vert-alig{
+        margin-top: 20px;
+    }
     .dc-border-rad i{
         line-height: 1.5;
-    }
-    .dc-vert-alig{
-        margin-top: 10px;
     }
     .dc-font-s-ico{
         font-size: 45px;
@@ -111,11 +113,17 @@ tbody td{
 /* main */
 
 /* media query parte fissa a sinistra */
+@media screen and (min-width: 768px) {
+   
+}
 @media screen and (min-width: 992px) {
     .dc-sidebar{
         width: 9.375rem;
     }
     .dc-margin{
         margin-right: 107px;
+    }
+    .dc-vert-alig{
+        margin-top: 40px;
     }
 }
