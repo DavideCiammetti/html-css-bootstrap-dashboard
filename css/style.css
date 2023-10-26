@@ -8,6 +8,7 @@ body{
     --blue-700: #051e34;
     --black: black;
 }
+
 /* header */
 .dc-header,
 nav{
@@ -113,9 +114,6 @@ tbody td{
 /* main */
 
 /* media query parte fissa a sinistra */
-@media screen and (min-width: 768px) {
-   
-}
 @media screen and (min-width: 992px) {
     .dc-sidebar{
         width: 9.375rem;
