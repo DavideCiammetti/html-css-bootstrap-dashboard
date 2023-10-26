@@ -72,6 +72,18 @@ main{
         font-size: 45px;
     }
     /* parte blu sotto header */
+
+/* parte sinistra main */
+.dc-left-container{
+    background-color: #ff8f00;
+}
+/* parte sinistra main */
+
+/* parte destra main */
+.dc-graph-check{
+    background-color: aqua;
+}
+/* parte destra main */
 /* main */
 
 /* media query parte fissa a sinistra */
