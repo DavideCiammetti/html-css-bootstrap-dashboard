@@ -99,7 +99,12 @@ tbody td{
 }
 
 /* parte sinistra main */
-
+.dc-color-black{
+    color: var(--black);
+}
+.dc-img-list img{
+    width: 100%;
+}
 /* parte destra main */
 
 /* parte destra main */
