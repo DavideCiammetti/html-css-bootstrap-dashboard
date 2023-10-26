@@ -58,7 +58,7 @@ main{
     }
     .dc-bg-pad p, 
     .dc-border-rad i{       /*stile paragrafi parte sopra blu*/
-        padding: .1875rem .5rem;
+        padding: .1875rem .25rem;
         background-color: #165bba;
         border-radius: 20px;
     }
@@ -74,9 +74,37 @@ main{
     /* parte blu sotto header */
 
 /* parte sinistra main */
-.dc-left-container{
-    background-color: #ff8f00;
+.dc-border-table{
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
 }
+.dc-table-img img{      /*img tabella*/
+    width: 30px;
+}
+.dc-h3-bord{
+    border-bottom: 1px solid #e0e0e0;
+}
+.dc-table-ico i{        /*icone tabella*/
+    color: #6c757d;
+    padding: 8px;
+    border: 1px solid #a4a6a7;
+    border-radius: 5px;
+}
+tbody td{
+    width: 120px;
+}
+.table{         
+    width: 97%;
+}
+.dc-long-h3{        /*larghezza h3 sopra tabella */
+    width: 100%;
+}
+.dc-cent-table,
+tbody td{
+    text-align: center;
+}
+
+
 /* parte sinistra main */
 
 /* parte destra main */
