@@ -13,7 +13,7 @@ nav{
     background-color: var(--white);
     height: 3.75rem;
 }
-.dc-wid-img{
+.dc-wid-img{            /*logo*/
     width: 4.0625rem;
 }
     /* icone header a destra */
@@ -83,30 +83,25 @@ main{
     border: 1px solid #a4a6a7;
     border-radius: 5px;
 }
-tbody td{
+tbody td{           /*larghezza righe*/
     width: 120px;
 }
-.table{         
+.table{        
     width: 97%;
 }
 .dc-long-h3{        /*larghezza h3 sopra tabella */
     width: 100%;
+    background-color: #f7f7f7;
 }
-.dc-cent-table,
+.dc-cent-table,         /*centratura testo tabella*/
 tbody td{
     text-align: center;
-}
-.dc-backc-h3,
-.dc-long-h3{           /*back coloro h3 FAQ lista */
-    background-color: #f7f7f7;
 }
 
 /* parte sinistra main */
 
 /* parte destra main */
-.dc-graph-check{
-    background-color: aqua;
-}
+
 /* parte destra main */
 /* main */
 
