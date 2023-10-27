@@ -21,7 +21,7 @@
     <!-- header -->
     <header class="dc-header">
         <!-- nav -->
-        <nav class="col-12 d-flex align-items-center sticky-top">
+        <nav class="col-12 d-flex align-items-center">
             <!-- logo -->
             <div class="d-flex pe-3 ">
                 <img src="./img/logo.svg" alt="logo.svg" class="d-none d-lg-block ps-3">
@@ -80,9 +80,8 @@
     <div class="d-flex">
         <div>
             <!-- container navbar sinistra -->
-            <div class="d-flex flex-column sticky-b20%m text-center dc-sidebar">
+            <div class="d-flex flex-column text-center dc-sidebar">
                 <!-- icone in alto -->
-                <div>
                    <ul class="d-flex flex-column">
                      
                     <li class="pt-4 d-flex">
@@ -100,18 +99,15 @@
                         <p class="d-none d-lg-inline">Signals</p>
                     </li>
                    </ul>
-                </div>
                 <!-- icone in alto -->
 
                 <!-- icona in basso -->
-                <div class="mt-auto mb-4">
-                   <ul >
+                   <ul class="mt-auto mb-4">
                     <li class="d-flex">
                         <i class="fa-solid fa-gear pe-3"></i> 
                         <p  class="d-none d-lg-inline">Admin</p>
                     </li>
                    </ul>
-                </div>
                 <!--fine iconea in basso -->
             </div>
             <!--fine container navbar sinistra -->
@@ -121,8 +117,8 @@
             <div class=" dc-bg-blue-300 d-flex flex-column flex-md-row">
 
                 <!-- parte di sinistra -->
-                <div class="col-12 col-md-6 d-flex flex-column ps-3 mt-4 mb-4 dc-bg-pad">
-                   <div class="d-flex align-items-baseline">
+                <div class="col-md-6 d-flex flex-column ps-3 mt-4 mb-4 dc-bg-pad">
+                   <div class="d-flex align-items-baseline dc-white">
                         <h3 class="me-2">Boolean</h3>
                         <p>Piano blaze</p>
                    </div>
@@ -139,7 +135,7 @@
                 </div>
                  <!-- parte di sinistra -->
                  <!-- parte di centro -->
-                <div class=" col-12 col-md-3 d-flex align-items-md-center flex-column  ms-3 mt-md-4 mb-md-4 dc-white">
+                <div class="col-md-3 d-flex align-items-md-center flex-column  ms-3 mt-md-4 mb-md-4 dc-white">
                     <span>
                         <p>Studenti online negli ultimi 30 minuti</p>
                         <h3>125</h3>
@@ -147,7 +143,7 @@
                 </div>
                 <!-- parte di centro -->
                 <!-- parte di destra-->
-                <div class="col-12 col-md-2 d-flex justify-content-md-center ms-3  mb-4 dc-white dc-margin">
+                <div class="col-md-2 d-flex justify-content-md-center ms-3  mb-4 dc-white dc-margin">
                    <span class="d-flex">
                     <p class="lh-3 mb-2 dc-vert-alig ">Nuovo studente</p>
                   
@@ -256,11 +252,11 @@
                                 <!-- testa tabella -->
                                 <thead>
                                 <tr>
-                                    <th scope="col" class="dc-w-table">Nome</th>
-                                    <th scope="col" class="d-none d-lg-table-cell dc-cent-table">Data inizio</th>
-                                    <th scope="col" class="dc-cent-table d-none d-lg-table-cell">ROI</th>
-                                    <th scope="col" class="dc-cent-table">Stato</th>
-                                    <th scope="col" class="dc-cent-table">Azioni</th>
+                                    <td scope="col" class="dc-w-table" colspan="2">Nome</td>
+                                    <td scope="col" class="d-none d-lg-table-cell dc-cent-table">Data inizio</td>
+                                    <td scope="col" class="dc-cent-table d-none d-lg-table-cell">ROI</td>
+                                    <td scope="col" class="dc-cent-table">Stato</td>
+                                    <td scope="col" class="dc-cent-table">Azioni</td>
                                 </tr>
                                 </thead>
                                 <!-- testa tabella -->
@@ -268,10 +264,10 @@
                                 <tbody class="dc-table-img">
                                 <!-- 1 riga -->
                                 <tr>
-                                    <th scope="row" >
+                                    <td scope="row" colspan="2" class="text-start">
                                         <img src="./img/class-avatar.png" alt="code.img">
                                         Classe 75
-                                    </th>
+                                    </td>
                                     <td class=" d-none d-lg-table-cell">15 feb 2021</td>
                                     <td class="d-none d-lg-table-cell">20%</td>
                                     <td><span class="badge text-bg-success">Done</span></td>
@@ -287,10 +283,10 @@
                                 <!-- 1 riga -->
                                 <!-- 2 riga -->
                                 <tr>
-                                    <th scope="row">
+                                    <td scope="row" colspan="2" class="text-start">
                                         <img src="./img/class-avatar.png" alt="code.img">
                                         Classe 76
-                                    </th>
+                                    </td>
                                     <td class="d-none d-lg-table-cell">16 feb 2021</td>
                                     <td class="d-none d-lg-table-cell">20%</td>
                                     <td><span class="badge text-bg-success">Done</span></td>
@@ -306,10 +302,10 @@
                                 <!-- 2 riga -->
                                 <!-- 3 riga -->
                                 <tr>
-                                    <th scope="row">
+                                    <td scope="row" colspan="2" class="text-start">
                                         <img src="./img/class-avatar.png" alt="code.img">
                                         Classe 77
-                                    </th>
+                                    </td>
                                     <td class="d-none d-lg-table-cell">17 feb 2021</td>
                                     <td class="d-none d-lg-table-cell">20%</td>
                                     <td><span class="badge text-bg-warning">process</span></td>
@@ -325,10 +321,10 @@
                                 <!-- 3 riga -->
                                 <!-- 4 riga -->
                                 <tr>
-                                    <th scope="row">
+                                    <td scope="row" colspan="2" class="text-start">
                                         <img src="./img/class-avatar.png" alt="code.img">
                                         Classe 78
-                                    </th>
+                                    </td>
                                     <td class="d-none d-lg-table-cell">18 feb 2021</td>
                                     <td class="d-none d-lg-table-cell">20%</td>
                                     <td><span class="badge text-bg-success">Done</span></td>
@@ -344,10 +340,10 @@
                                 <!-- 4 riga -->
                                 <!--5 riga -->
                                 <tr>
-                                    <th scope="row">
+                                    <td scope="row" colspan="2" class="text-start">
                                         <img src="./img/class-avatar.png" alt="code.img">
                                         Classe 79
-                                    </th>
+                                    </td>
                                     <td class="d-none d-lg-table-cell">19 feb 2021</td>
                                     <td class="d-none d-lg-table-cell">20%</td>
                                     <td><span class="badge text-bg-danger">failed</span></td>
@@ -363,10 +359,10 @@
                                 <!-- 5 riga -->
                                 <!-- 6 riga -->
                                 <tr>
-                                    <th scope="row">
+                                    <td scope="row" colspan="2" class="text-start">
                                         <img src="./img/class-avatar.png" alt="code.img">
                                         Classe 80
-                                    </th>
+                                    </td>
                                     <td class="d-none d-lg-table-cell">20 feb 2021</td>
                                     <td class="d-none d-lg-table-cell">20%</td> 
                                     <td><span class="badge text-bg-success">Done</span></td>
@@ -382,10 +378,10 @@
                                 <!-- 6 riga -->
                                 <!-- 7 riga -->
                                 <tr>
-                                    <th scope="row">
+                                    <td scope="row" colspan="2" class="text-start">
                                         <img src="./img/class-avatar.png" alt="code.img">
                                         Classe 81
-                                    </th>
+                                    </td>
                                     <td class="d-none d-lg-table-cell">21 feb 2021</td>
                                     <td class="d-none d-lg-table-cell">20%</td>
                                     <td><span class="badge text-bg-danger">failed</span></td>
@@ -401,10 +397,10 @@
                                     <!-- 7 riga -->
                                     <!-- 8 riga -->
                                     <tr>
-                                    <th scope="row">
+                                    <td scope="row" colspan="2" class="text-start">
                                         <img src="./img/class-avatar.png" alt="code.img">
                                         Classe 82
-                                    </th>
+                                    </td>
                                     <td class="d-none d-lg-table-cell">22 feb 2021</td>
                                     <td class="d-none d-lg-table-cell">20%</td>
                                     <td><span class="badge text-bg-success">Done</span></td>
@@ -481,19 +477,19 @@
                         </div>
                         <!-- parte interna -->
                         <div class="border rounded-3 m-3 ">
-                                <div class=" border-bottom p-3">
+                                <div class=" border-bottom p-2">
                                     <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
                                     Kickoff nuove classi
                                     </label>
                                 </div>
-                                <div class=" border-bottom p-3">
+                                <div class=" border-bottom p-2">
                                     <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckChecked" checked>
                                     <label class="form-check-label" for="flexCheckChecked">
                                     Lezione su Bootstrap 5 in classe #75
                                     </label>
                                 </div>
-                                <div class=" p-3">
+                                <div class=" p-2">
                                     <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckChecked" checked>
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Controllare username github studenti
