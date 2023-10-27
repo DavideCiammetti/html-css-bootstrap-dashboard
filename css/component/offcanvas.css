@@ -30,6 +30,9 @@
 .dc-state-p{        /*lista stati*/
     left: 48%;
 }
+.dc-w-pax{
+    width: 45.1875rem;
+}
 .dc-file-search{
     bottom: 60%;
 }
